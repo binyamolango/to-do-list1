@@ -1,7 +1,7 @@
 {
-  "name": "todo-list",
+  "name": "to-do-list1",
   "version": "1.0.0",
-  "description": "\"To-do list\" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I have built a simple website that allows for doing that, and I have done it using ES6 and Webpack!",
+  "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binyamolango/todo-list.git"
+    "url": "git+https://github.com/binyamolango/to-do-list1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/binyamolango/todo-list/issues"
+    "url": "https://github.com/binyamolango/to-do-list1/issues"
   },
-  "homepage": "https://github.com/binyamolango/todo-list#readme",
+  "homepage": "https://github.com/binyamolango/to-do-list1#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
@@ -42,5 +42,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "server.js"
 }
