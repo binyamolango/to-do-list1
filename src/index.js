@@ -1,27 +1,35 @@
-import _ from 'lodash';
 import './style.css';
-import Icon from './icon.jpg';
-import printMe from './print.js';
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+const tasks = [
+  {
+    description: 'Wash clothes',
+    completed: true,
+    index: 1,
+  },
+  {
+    description: 'TAWG',
+    completed: true,
+    index: 2,
+  },
+  {
+    description: 'Exercise',
+    completed: false,
+    index: 3,
+  },
+];
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const taskList = document.getElementById('task-list');
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
-
-  element.appendChild(myIcon);
-
-  return element;
-}
-document.body.appendChild(component());
+tasks.forEach((item) => {
+  taskList.innerHTML += `
+    <li class="task-item row col-child">
+      <div>
+        <button class="checkBtn"></button>
+        ${item.description}
+      </div>
+      <div>
+        <button class="moveBtn"></button>
+      </div>
+    </li>
+  `;
+});
